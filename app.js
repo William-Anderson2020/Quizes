@@ -19,14 +19,12 @@ let robGreaterBMI = (robBMI > dejonBMI);
 console.log(`Rob's BMI is greater than Dejon's is a ${robGreaterBMI} statement.`);
 
 if(robBMI > dejonBMI){
-    alert(`Rob's BMI is greater then Dejon's by ${Math.round(robBMI - dejonBMI)} kg/m^2.`)
-} else {
-    if(robBMI = dejonBMI){
-        alert(`Rob's BMI is the same as Dejon's.`)
-    } else{
-        alert(`Rob's BMI is less then Dejon's by ${Math.round(dejonBMI - robBMI)} kg/m^2.`)
-    }
-};
+    alert(`Rob's BMI is greater then Dejon's by ${Math.round(robBMI - dejonBMI)} kg/m^2.`);
+} else if(robBMI = dejonBMI){
+    alert(`Rob's BMI is the same as Dejon's.`);
+} else{
+    alert(`Rob's BMI is less then Dejon's by ${Math.round(dejonBMI - robBMI)} kg/m^2.`);
+}
 
 let userHeight = prompt(`What is your height in meters?`, `1.5`);
 let userMass = prompt(`What is your mass in kilograms?`, 75);
